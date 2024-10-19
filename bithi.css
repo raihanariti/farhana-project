@@ -1,0 +1,253 @@
+body {
+    background: #000;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Style for the search form to match your provided design */
+.search-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    background-color: #2c2c2c;
+    color: #aaa;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px 10px 40px;
+    width: 300px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-input::placeholder {
+    color: #888;
+}
+
+.search-input:focus {
+    outline: none;
+    background-color: #3d3d3d;
+    color: #fff;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    color: #aaa;
+    font-size: 16px;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    border: none;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #aaa;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+/* Hero section */
+:root {
+    --primary-color: #ff4d4d;
+    --text-color: #333;
+}
+
+.hero-section {
+    padding: 100px 0;
+    position: relative;
+    background-image: url('img/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.greeting {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.name-wrapper {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.animated-bg-vertical {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    background-color: rgba(255, 77, 77, 0.1);
+    z-index: 2;
+    animation: 3s slide-right;
+    transform: rotate(90deg);
+}
+
+@keyframes slide-right {
+    from {
+        margin-left: -100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+.name {
+    font-size: 72px;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.hero-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.schedule-btn {
+    padding: 12px 30px;
+    background: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.schedule-btn:hover {
+    transform: scale(1.05);
+    background-color: #ec3700;
+    color: #fff;
+}
+
+.hero-image-3d {
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: perspective(1000px) rotateY(10deg) rotateX(5deg);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.hero-image-3d:hover {
+    transform: perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.side-links {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+    writing-mode: vertical-rl;
+    display: flex;
+    gap: 30px;
+}
+
+.side-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.side-link:hover {
+    color: var(--primary-color);
+}
+
+/* Latest Work Section - Fix for consistent size */
+.latest-work .work-card {
+    height: 100%;
+}
+
+.latest-work .work-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.latest-work .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.view-all {
+    color: blue;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.view-all:hover {
+    color: var(--primary-color);
+}
+
+/* About Section */
+.content-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.content-heading {
+    font-size: 32px;
+    color: #ff5748;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.content-description {
+    font-size: 16px;
+    color: #5a5a5a;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.highlighted-text {
+    font-size: 16px;
+    color: #5a5a5a;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.highlighted-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #ff6f61;
+}
+
+.highlight {
+    font-weight: 700;
+}
+
+/* YouTube Button */
+.visit-youtube-btn {
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.visit-youtube-btn:hover {
+    background-color: #ec3700;
+    color: #fff;
+    transform: scale(1.05);
+}
+
