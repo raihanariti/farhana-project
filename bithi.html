@@ -8,19 +8,18 @@
     <link rel="stylesheet" href="bithi.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
 </head>
 <body>
-    
-   <!-- Navigation Bar -->
+
+   <!-- Sticky Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">FOUNDATION</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="industriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Industries
@@ -59,7 +58,7 @@
                 </li>
             </ul>
             <!-- Updated search form -->
-            <form class="d-flex search-form" role="search">
+            <form class="d-flex search-form">
                 <div class="input-wrapper">
                     <i class="fas fa-search search-icon"></i>
                     <input class="form-control search-input" type="search" placeholder="What are you looking for?" aria-label="Search">
@@ -70,99 +69,107 @@
     </div>
 </nav>
 
-
-    <!--hero section-->
-    <section class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="hero-content">
-                        <div class="greeting">HELLO THERE, NICE TO MEET YOU ❤️, I AM</div>
-                        <div class="name-wrapper">
-                            <div class="animated-bg-vertical"></div>
-                            <h1 class="name">Farhana</h1>
-                        </div>
-                        <p class="hero-text">Youtuber , Video editor , creative map Designer </p>
-                        <button class="schedule-btn">schedule a call</button>
+<!--hero section-->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="hero-content">
+                    <div class="greeting">HELLO THERE, NICE TO MEET YOU ❤️, I AM</div>
+                    <div class="name-wrapper">
+                        <div class="animated-bg-vertical"></div>
+                        <h1 class="name">Farhana</h1>
                     </div>
-                    <div class="latest-work mt-5">
-                        <h2>Latest Work</h2>
-                        <div class="row g-4">
-                            <div class="col-md-4">
-                                <a href="#" class="work-card">
-                                    <img src="img/map1.jpg" alt="Project 1" class="img-fluid rounded">
-                                </a>
+                    <p class="hero-text"><strong>Youtuber, Video editor, creative map Designer</strong></p>
+
+                    <!-- Schedule Button -->
+                    <div class="col-md-4">
+                        <button class="btn-epic">
+                            <div>
+                                <span>Schedule a Call</span>
+                                <span>Schedule a Call</span>
                             </div>
-                            <div class="col-md-4">
-                                <a href="#" class="work-card">
-                                    <img src="img/map2.jpg" alt="Project 2" class="img-fluid rounded">
-                                </a>
-                            </div>
-                            <div class="col-md-4">
-                                <a href="#" class="work-card">
-                                    <img src="img/map3.jpg" alt="Project 3" class="img-fluid rounded">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="text-start mt-4">
-                            <a href="#" class="view-all">view all</a>
-                        </div>
+                        </button>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="hero-image-wrapper">
-                        <img src="img/about1.png" alt="Designer" class="img-fluid hero-image-3d">
-                        <div class="side-links">
-                            <a href="#" class="side-link">download cv</a>
-                            <a href="#" class="side-link">client reviews</a>
-                            <a href="#" class="side-link">my process</a>
+                <div class="latest-work mt-5">
+                    <h2>Latest Work</h2>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <a href="#" class="work-card">
+                                <img src="img/map1.jpg" alt="Project 1" class="img-fluid rounded">
+                            </a>
                         </div>
+                        <div class="col-md-4">
+                            <a href="#" class="work-card">
+                                <img src="img/map2.jpg" alt="Project 2" class="img-fluid rounded">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="work-card">
+                                <img src="img/map3.jpg" alt="Project 3" class="img-fluid rounded">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-start mt-4">
+                        <a href="#" class="view-all">View all</a>
                     </div>
                 </div>
             </div>
+            <div class="col-lg-6">
+                <div class="hero-image-wrapper">
+                    <div class="background">
+                        <div class="circle circle1"></div>
+                        <div class="circle circle2"></div>
+                        <div class="circle circle3"></div>
+                        <div class="rectangle rect1"></div>
+                        <div class="rectangle rect2"></div>
+                        <div class="brush-stroke"></div>
+                        <div class="dotted-pattern"></div>
+                    </div>
+                    <img src="img/about1.png" >
+                </div>
+            </div>
+            <div class="side-links">
+                <a href="#" class="side-link">Download CV</a>
+                <a href="#" class="side-link">Client reviews</a>
+                <a href="#" class="side-link">My process</a>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
 <!--About section-->
-
- <section class="content-section">
+<section class="content-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-12 image-col">
                 <img src="img/juthi-removebg-preview.png" alt="Person Image" class="img-fluid image-slide">
             </div>
             <div class="col-lg-6 col-md-12 text-col">
-                <h2 class="content-heading slide-right">Hello! <br> <span
-                        style="color:#3d3957;font-weight:bold">I'm FARHANA RAHMAN.</span></h2>
+                <h2 class="content-heading slide-right">Hello! <br> <span style="color:#3d3957;font-weight:bold">I'm FARHANA RAHMAN.</span></h2>
                 <p class="content-description slide-right">
-                    I used to be a chemist, and then a teacher, and now I make my living as a freelancer. If you
-                    want to know a lot more about me and how I got here, you can read about my journey by clicking
-                    here. Feel free to write me at somethingaboutmaps@gmail.com to ask me about my favorite
-                    typefaces, why I dislike the Van der Grinten projection, or to hire me to help you tell your
-                    spatial stories.
+                    I used to be a chemist, and then a teacher, and now I make my living as a freelancer. If you want to know a lot more about me and how I got here, you can read about my journey by clicking here.
+                    Feel free to write me at somethingaboutmaps@gmail.com to ask me about my favorite typefaces, why I dislike the Van der Grinten projection, or to hire me to help you tell your spatial stories.
                 </p>
                 <p class="highlighted-text slide-right">
                     <span class="highlight">and I make maps.</span>
                 </p>
                 <p class="content-description slide-right">
-                    It seems to me that maps are as much about art as data, and creating connections between people
-                    and stories that happen to have a geography. I worry that the speed and ease of the computer has
-                    made it too easy to leave the humanity out of maps — that creative spark that people bring to
-                    their unfeeling tools.
+                    It seems to me that maps are as much about art as data, and creating connections between people and stories that happen to have a geography. I worry that the speed and ease of the computer has made it too easy to leave the humanity out of maps — that creative spark that people bring to their unfeeling tools.
                 </p>
 
-                <!-- New Button for YouTube Channel -->
+                <!-- YouTube Button -->
                 <p class="text-center mt-4">
-                    <a href="https://www.youtube.com/channel/YourChannelLink"
-                        class="btn btn-outline-primary visit-youtube-btn">Visit My YouTube Channel</a>
+                    <a href="https://www.youtube.com/channel/YourChannelLink" class="btn btn-outline-primary visit-youtube-btn">Visit My YouTube Channel</a>
                 </p>
             </div>
         </div>
     </div>
 </section>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="bithi.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="bithi.js"></script>
 </body>
 </html>

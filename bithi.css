@@ -4,11 +4,36 @@ body {
     overflow-x: hidden;
 }
 
+/* Sticky Top Header */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the navbar is above all other content */
+}
+
+/* Center the navigation bar */
+.navbar .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px; /* Add some space between nav items */
+}
+
 /* Style for the search form to match your provided design */
 .search-form {
     display: flex;
     align-items: center;
     position: relative;
+    margin-left: auto;
 }
 
 .input-wrapper {
@@ -115,19 +140,112 @@ body {
     margin-bottom: 30px;
 }
 
-.schedule-btn {
-    padding: 12px 30px;
-    background: none;
-    border: 2px solid var(--primary-color);
-    border-radius: 5px;
-    color: var(--primary-color);
-    transition: transform 0.3s ease;
+/* Schedule Button */
+.btn-epic {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 260px;
+    height: 52px;
+    background: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: .05em;
+    text-transform: capitalize;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.6s ease;
 }
 
-.schedule-btn:hover {
-    transform: scale(1.05);
-    background-color: #ec3700;
-    color: #fff;
+.btn-epic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #c43434;
+    border-radius: 50% 50% 0 0;
+    transform: translateY(100%) scaleY(0.5);
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.btn-epic::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 0;
+    transform: translateY(0) scaleY(1);
+    transition: all 0.6s ease;
+}
+
+.btn-epic div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.btn-epic span {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.btn-epic span:first-child {
+    color: white;
+    transform: translateY(24px);
+}
+
+.btn-epic span:last-child {
+    color: #1E0F21;
+    transform: translateY(0);
+}
+
+.btn-epic:hover {
+    background: #db3333;
+    transition: background-color 0.2s ease;
+}
+
+.btn-epic:hover::before {
+    border-radius: 0;
+    transform: translateY(0) scaleY(1);
+    transition-delay: 0;
+}
+
+.btn-epic:hover::after {
+    border-radius: 0 0 50% 50%;
+    transform: translateY(-100%) scaleY(0.5);
+    transition-delay: 0;
+}
+
+.btn-epic:hover span:first-child {
+    transform: translateY(0);
+}
+
+.btn-epic:hover span:last-child {
+    transform: translateY(-24px);
+}
+
+.hero-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .hero-image-3d {
@@ -157,13 +275,14 @@ body {
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s ease;
+    margin-left: 40px;
 }
 
 .side-link:hover {
     color: var(--primary-color);
 }
 
-/* Latest Work Section - Fix for consistent size */
+/* Latest Work Section */
 .latest-work .work-card {
     height: 100%;
 }
@@ -192,7 +311,87 @@ body {
     color: var(--primary-color);
 }
 
-/* About Section */
+/* Geometric Background */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.circle1 {
+    width: 100px;
+    height: 100px;
+    background-color: #F2CEC4;
+    top: 50px;
+    left: 30px;
+}
+
+.circle2 {
+    width: 50px;
+    height: 50px;
+    background-color: #F2CEC4;
+    top: 300px;
+    left: 20px;
+}
+
+.circle3 {
+    width: 30px;
+    height: 30px;
+    background-color: #F2CEC4;
+    top: 450px;
+    left: 50px;
+}
+
+.rectangle {
+    position: absolute;
+    background-color: #A1B09A;
+}
+
+.rect1 {
+    width: 120px;
+    height: 120px;
+    top: 150px;
+    right: -60px;
+}
+
+.rect2 {
+    width: 80px;
+    height: 80px;
+    top: 400px;
+    right: 20px;
+}
+
+.brush-stroke {
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    background-color: #F2CEC4;
+    opacity: 0.4;
+    top: 220px;
+    left: 150px;
+    transform: rotate(30deg);
+    border-radius: 50px;
+}
+
+.dotted-pattern {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #000 10%, transparent 11%);
+    background-size: 10px 10px;
+    top: 300px;
+    left: 150px;
+}
+
 .content-section {
     padding: 60px 20px;
     background-color: #ffffff;
@@ -234,7 +433,6 @@ body {
     font-weight: 700;
 }
 
-/* YouTube Button */
 .visit-youtube-btn {
     padding: 12px 30px;
     background-color: var(--primary-color);
@@ -250,4 +448,3 @@ body {
     color: #fff;
     transform: scale(1.05);
 }
-
